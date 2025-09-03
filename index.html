@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>返乡青年宇宙第一次编剧沙龙 - 邀请函</title>
+    <title>安可青年线上沙龙邀请函</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
@@ -15,25 +14,26 @@
         
         body {
             font-family: 'Noto Sans SC', sans-serif;
-            background-color: #f0f8f0;
+            background: linear-gradient(135deg, #f0f8f0 0%, #e0f0e0 100%);
             color: #333;
             line-height: 1.6;
             padding: 20px;
+            min-height: 100vh;
         }
         
         .container {
-            max-width: 650px;
+            max-width: 800px;
             margin: 0 auto;
             background: white;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
             border: 2px solid #c4e8c4;
         }
         
         .header {
-            background: linear-gradient(135deg, #2e8b57 0%, #7cbc8f 100%);
-            padding: 40px 30px;
+            background: linear-gradient(135deg, #2e8b57 0%, #4ea374 100%);
+            padding: 50px 30px;
             text-align: center;
             color: white;
             position: relative;
@@ -46,40 +46,40 @@
             left: 0;
             width: 100%;
             height: 40px;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 V100 H1000 V0 C900,80 800,100 600,60 C400,20 200,80 0,0 Z' fill='%23f0f8f0'/%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 V100 H1000 V0 C900,80 800,100 600,60 C400,20 200,80 0,0 Z' fill='%23ffffff'/%3E%3C/svg%3E");
             background-size: 1000px 100px;
         }
         
         h1 {
-            font-family: 'Noto Sans SC', sans-serif;
             font-weight: 900;
-            font-size: 2.8rem;
+            font-size: 3.2rem;
             margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            letter-spacing: 1px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            letter-spacing: 2px;
         }
         
         h2 {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             font-weight: 400;
             margin-bottom: 10px;
         }
         
         .content {
-            padding: 50px 40px 40px;
+            padding: 60px 50px 50px;
         }
         
         .details {
             background: #eaf7ea;
             border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
-            border: 1px dashed #c4e8c4;
+            padding: 30px;
+            margin-bottom: 40px;
+            border: 2px dashed #a3d1a3;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
         .detail-item {
             display: flex;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             align-items: center;
         }
         
@@ -88,9 +88,9 @@
         }
         
         .icon {
-            width: 30px;
-            height: 30px;
-            margin-right: 15px;
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
             background-color: #2e8b57;
             border-radius: 50%;
             display: flex;
@@ -98,78 +98,84 @@
             justify-content: center;
             color: white;
             flex-shrink: 0;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(46, 139, 87, 0.3);
         }
         
         .agenda {
-            margin: 35px 0;
+            margin: 40px 0;
         }
         
         .agenda-item {
             display: flex;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             position: relative;
         }
         
         .agenda-time {
-            width: 80px;
+            width: 100px;
             flex-shrink: 0;
             font-weight: bold;
             color: #2e8b57;
+            font-size: 1.1rem;
         }
         
         .agenda-content {
-            padding-left: 20px;
-            border-left: 2px solid #7cbc8f;
+            padding-left: 25px;
+            border-left: 3px solid #7cbc8f;
             position: relative;
-            padding-bottom: 25px;
+            padding-bottom: 30px;
         }
         
         .agenda-content::before {
             content: "";
             position: absolute;
-            left: -8px;
+            left: -10px;
             top: 0;
-            width: 14px;
-            height: 14px;
+            width: 18px;
+            height: 18px;
             border-radius: 50%;
             background: #7cbc8f;
+            box-shadow: 0 0 0 4px #eaf7ea;
         }
         
         .agenda-item:last-child .agenda-content {
-            border-left: 2px solid transparent;
+            border-left: 3px solid transparent;
             padding-bottom: 0;
         }
         
         .cta {
             text-align: center;
-            margin: 40px 0 30px;
+            margin: 50px 0 40px;
         }
         
         .btn {
             display: inline-block;
             background: #2e8b57;
             color: white;
-            padding: 14px 35px;
+            padding: 16px 45px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+            box-shadow: 0 6px 20px rgba(46, 139, 87, 0.4);
+            border: 2px solid #267349;
         }
         
         .btn:hover {
             background: #267349;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(46, 139, 87, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(46, 139, 87, 0.5);
         }
         
         .footer {
             text-align: center;
-            padding: 20px;
-            color: #888;
-            font-size: 0.9rem;
+            padding: 25px;
+            color: #777;
+            font-size: 0.95rem;
             border-top: 1px solid #eee;
+            background: #f9f9f9;
         }
         
         .highlight {
@@ -179,29 +185,74 @@
         
         .note-box {
             background: #f8fff8;
-            border-left: 4px solid #2e8b57;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
+            border-left: 5px solid #2e8b57;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
         .meeting-link {
             color: #2e8b57;
             text-decoration: none;
             font-weight: bold;
+            border-bottom: 2px dotted #2e8b57;
+            transition: all 0.2s;
         }
         
         .meeting-link:hover {
-            text-decoration: underline;
+            color: #267349;
+            border-bottom: 2px solid #267349;
         }
         
-        @media (max-width: 600px) {
+        .slogan-container {
+            text-align: center;
+            padding: 40px 30px;
+            background: linear-gradient(135deg, #f9fdf9 0%, #edf7ed 100%);
+            border-top: 2px dashed #c4e8c4;
+        }
+        
+        .slogan-gif {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            border: 3px solid #fff;
+            margin-bottom: 25px;
+            transition: transform 0.3s;
+        }
+        
+        .slogan-gif:hover {
+            transform: scale(1.02);
+        }
+        
+        .slogan-text {
+            margin-top: 20px;
+            font-style: italic;
+            color: #2e8b57;
+            font-weight: 600;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .intro-text {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
+        @media (max-width: 700px) {
             .header {
-                padding: 30px 20px;
+                padding: 40px 20px;
             }
             
             h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
             }
             
             .content {
@@ -214,7 +265,31 @@
             }
             
             .icon {
+                margin-bottom: 15px;
+            }
+            
+            .agenda-item {
+                flex-direction: column;
+            }
+            
+            .agenda-time {
+                width: 100%;
                 margin-bottom: 10px;
+                padding-left: 25px;
+            }
+            
+            .agenda-content {
+                padding-left: 25px;
+                border-left: 3px solid #7cbc8f;
+            }
+            
+            .btn {
+                padding: 14px 35px;
+                font-size: 1.1rem;
+            }
+            
+            .slogan-text {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -298,10 +373,25 @@
     </div>
 
     <script>
-        // 简单的交互效果
+        // 交互效果
         document.querySelector('.btn').addEventListener('click', function(e) {
             e.preventDefault();
-            alert('感谢您的参与确认！欢迎加入安可青年共创行动');
+            alert('感谢您的参与确认！我们会尽快将会议详细信息发送给您。');
+        });
+        
+        // 添加简单的动画效果
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.detail-item, .agenda-item, .note-box');
+            elements.forEach((element, index) => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                
+                setTimeout(() => {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, 100 + (index * 100));
+            });
         });
     </script>
 </body>
