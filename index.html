@@ -196,6 +196,7 @@
                         <button @click="openModal('form', '成为安可青年')" class="px-8 py-4 bg-magenta text-white font-bold rounded-xl border-2 border-teal-dark shadow-neo hover:shadow-neo-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all duration-200 flex items-center gap-2">
                             成为安可青年 <i data-lucide="arrow-right" class="w-5 h-5"></i>
                         </button>
+                        <!-- 更新下载链接 -->
                         <a href="https://easylink.cc/8pb2ci" target="_blank" class="px-8 py-4 bg-transparent text-teal-dark font-bold rounded-xl border-2 border-teal-dark hover:bg-teal-dark hover:text-cream transition-all duration-200">
                             下载调研报告
                         </a>
@@ -421,8 +422,8 @@
                         
                         <div class="border-t border-teal-dark/10 pt-4 flex items-center justify-between">
                             <span class="text-xs font-medium opacity-60">回顾已发布</span>
-                            <!-- 直接跳转逻辑 (阅读文章) -->
-                            <button @click="openExternalLink('https://mp.weixin.qq.com/')" class="text-sm font-bold text-teal-dark hover:text-magenta flex items-center gap-1 group">
+                            <!-- 更新回顾链接 -->
+                            <button @click="openExternalLink('https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzYyMTE0MzA0NQ==&action=getalbum&album_id=4138499315792527387&scene=126#wechat_redirect')" class="text-sm font-bold text-teal-dark hover:text-magenta flex items-center gap-1 group">
                                 查看回顾 <i data-lucide="external-link" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                             </button>
                         </div>
@@ -579,7 +580,8 @@
                         <li><a href="#about" class="hover:text-magenta transition-colors">关于项目</a></li>
                         <li><a href="#model" class="hover:text-magenta transition-colors">安可模式</a></li>
                         <li><a href="#actions" class="hover:text-magenta transition-colors">参与行动</a></li>
-                        <li><a href="#" class="hover:text-magenta transition-colors">下载报告 PDF</a></li>
+                        <!-- 更新底部下载链接 -->
+                        <li><a href="https://easylink.cc/8pb2ci" target="_blank" class="hover:text-magenta transition-colors">下载报告 PDF</a></li>
                     </ul>
                 </div>
                 <div>
